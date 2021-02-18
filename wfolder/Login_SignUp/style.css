@@ -1,3 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#box{
+  background-color: grey;
+  margin: auto;
+  width: 300px;
+  padding: 20px;
+}
+#loginheader {
+  margin: auto;
+  width: 100px;
+  padding: 3rem 2rem;
+}
+header {
+  background: #f4f4f4;
+  padding: 1rem;
+  text-align: center;
+}
+.container {
+  margin: auto;
+  width: 500px;
+  overflow: auto;
+  padding: 3rem 2rem;
+}
 #text{
 
   height: 25px;
@@ -9,17 +37,17 @@
 
 #button{
 
-  padding: 10px;
-  width: 100px;
-  color: white;
-  background-color: lightblue;
-  border: none;
+  isplay: block;
+  width: 100%;
+  padding: 10px 15px;
+  border: 0;
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px 0;
 }
-
-#box{
-
-  background-color: grey;
-  margin: auto;
-  width: 300px;
-  padding: 20px;
+.message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
 }

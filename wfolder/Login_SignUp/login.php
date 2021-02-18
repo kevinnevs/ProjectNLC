@@ -46,24 +46,34 @@ if ($_SERVER['REQUEST_METHOD'] == "POST")
 
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title> Login </title>
+	<meta charset="UTF-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title> Login </title>
 	<link rel="stylesheet" href="style.css">
 </head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 <body>
-	<div id="box">
-
+	<header>
+    <h1>NLC CELL MANAGEMENT SYSTEM</h1></header>
+		<div id="loginheader">
+		    <h2>Login</h2>
+		  </div>
+		    <section class = "container">
 <form method="POST">
-<div style="font-size: 20px;margin: 10px;color: white;">Login</div>
-
-	<input id="text" type="text" name="user_name"><br><br>
-		<input id="text" type="password" name="password"><br><br>
-
-	<input id="button" type="submit" value="Login"><br><br>
-
-<a href="signup.php">Click to Signup</a><br><br>
-
+	<div class="input-group">
+		<label>Username</label>
+	<input id="text" type="text" name="user_name">
+</div>
+	<div class="input-group">
+		<label>Password</label>
+		<input id="text" type="password" name="password">
+	</div>
+	<input class="button" id="button" type="submit" value="Login">
+<p class="message">Not registered? <a href="signup.php">Create an account</a></p>
 </form>
 </div>
 
