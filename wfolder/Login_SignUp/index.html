@@ -1,0 +1,66 @@
+<!-- <? php
+
+session_start();
+
+include("connection.php");
+include("function.php");
+
+$user_data = check_login($con);
+
+?>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title> Home Page </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<title> My Account</title>
+  <body>
+    <!-- Top navigation -->
+    <div class="topnav">
+      <a href="#home">CELL MANAGEMENT SYSTEM<a />
+        <div class="topnav-right">
+          <a href="#search">Search</a>
+          <a href="#about">About</a>
+          <a href="#search">Search</a>
+          <a href="#about">About</a>
+        </div>
+    </div>
+    <!-- Side navigation -->
+    <div class="sidenav">
+      <a href="#">Dashboard</a>
+      <button class="dropdown-btn">Cell Members
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a class="active" href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+      <button class="dropdown-btn">Cell Attendance
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a class="active" href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- Page content -->
+    <div class="main">
+      Hello,
+      <!-- <?php echo $user_data['user_name']; ?> -->
+    </div>
+
+    <a href="logout.php"> Log out</a>
+  </body>
+
+</html>
